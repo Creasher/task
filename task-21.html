@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task-21</title>
+    <style>
+        *{
+            margin-top:10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="tagIn">
+        <span>Tag:</span>
+        <input type="text" id="tag" name="inputTag" placeholder="输入Tag" />
+        <ul id="tagQueue">
+
+        </ul>
+    </div>
+    <div>
+        <textarea id="hobby" placeholder="输入兴趣爱好"></textarea>
+        <br>
+        <button id="confirm">确认兴趣爱好</button>
+        <ul id="hobbyQueue">
+
+        </ul>
+
+    </div>
+    <script src="js/task-21.js"></script>
+    <script>
+        var tagQueue=document.getElementById("tagQueue");
+        var hobbyQueue=document.getElementById("hobbyQueue");
+        var confirm = document.getElementById("confirm");
+        var tag = document.getElementById("tag");
+        var hobby = document.getElementById("hobby");
+        var enter;
+        var tag1 = inPut(tagQueue,enter,tag);
+        var hobby1 = inPut(hobbyQueue,confirm,hobby);
+
+    </script>
+
+
+
+</body>
+</html>
