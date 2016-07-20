@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task-5</title>
+    <style type="text/css">
+        /*用了css3的弹性盒子*/
+        body > div{
+            /*display: flex;*/
+            /*align-items: flex-end;*/
+            /*justify-content: center;*/
+            width:1200px;
+            height:520px;
+            border:1px solid lightblue;
+            margin: 10px auto;
+            text-align: center;
+            position:relative;
+
+
+        }
+        div div{
+            margin:1px;
+            /*float: left;*/
+            vertical-align: text-bottom;
+            display: inline-block;
+            /*float与inline-block的基线不一样，float的基线是浮动元素紧贴顶部，而inline-block
+            的基线是默认的基线即它咋垂直担心上与父系元素的的基线对齐，所以比价灵活可以配合vertical-align*/
+        }
+    </style>
+</head>
+<body>
+    <fieldset id="form-gra-time">
+        <legend>请选择日期粒度：</legend>
+        <label>日<input name="gra-time" value="day" type="radio" checked="checked"></label>
+        <label>周<input name="gra-time" value="week" type="radio"></label>
+        <label>月<input name="gra-time" value="month" type="radio"></label>
+    </fieldset>
+
+    <fieldset>
+        <legend>请选择查看的城市：</legend>
+        <select id="city-select">
+            <option>北京</option>
+        </select>
+    </fieldset>
+
+    <div id="aqi-chart-wrap">
+    </div>
+
+    <script src="js/task-5.js"></script>
+</body>
+</html>
