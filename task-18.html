@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task-18</title>
+    <style type="text/css">
+        #form1{
+            width:500px;
+        }
+        #blank{
+            margin-right: 50px;
+            /*with:50px; */
+            /*注意给块级元素设置长宽，不过要注意input，img之类的术语课置换inline元素 具体还是要看不同浏览器的css设置*/
+        }
+        #num-Queue span{
+            display: inline-block;
+            height:40px;
+            background-color: red;
+            margin:10px 10px;
+            color:white;
+            line-height:40px;
+            text-align: center;
+            padding:10px 10px;
+        }
+        button{
+            width:70px;
+        }
+    </style>
+</head>
+<body>
+
+    <input id="numInput" type="text" title="请输入数字">
+    <button id="LI" >左侧入</button>
+    <button id="RI" >右侧入</button>
+    <span id="blank"></span>
+    <button id="LO" >左侧出</button>
+    <button id="RO" >右侧出</button>
+    <div id="num-Queue">
+
+    </div>
+    <script src="js/task-18.js"></script>
+
+</body>
+</html>

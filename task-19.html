@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task-19 based on Task-18</title>
+    <style type="text/css">
+
+        .blank{
+            margin-right: 50px;
+            /*with:50px; */
+            /*注意给块级元素设置长宽，不过要注意input，img之类的术语课置换inline元素 具体还是要看不同浏览器的css设置*/
+        }
+        #num-Queue span{
+            display: inline-block;
+            height:40px;
+            background-color: red;
+            margin:10px 2px;
+            color:white;
+            line-height:40px;
+            text-align: center;
+            padding:10px 10px;
+        }
+        button{
+            width:100px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <input id="numInput" type="text" title="请输入数字" placeholder="请输入数字" />
+    <button id="LI" >左侧入</button>
+    <button id="RI" >右侧入</button>
+    <span class="blank"></span>
+    <button id="LO" >左侧出</button>
+    <button id="RO" >右侧出</button>
+    <span class="blank"></span>
+    <button id="sort">排序</button>
+    <button id="random">随机</button>
+    <input id="timeInput" type="text" title="请输入time" placeholder="请输入time"/>
+    <button id="changeTime">修改时间</button>
+
+    <div id="num-Queue">
+
+    </div>
+    <script src="js/task-19-new.js" ></script>
+
+
+</body>
+</html>
